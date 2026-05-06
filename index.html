@@ -3,244 +3,319 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Island Escape - A Game of Cooperation</title>
+    <title>Alien Assembly Line</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- ========================================
-       NAVIGATION
-       ======================================== -->
-    <nav>
-      <div class="container">
-        <h1>🎮 Island Escape</h1>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#gameplay">Gameplay</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#play">Play</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- ========================================
-       HERO SECTION
-       ======================================== -->
-    <section class="hero">
-      <div class="container">
-        <h2>Island Escape</h2>
-        <p>
-          A cooperative adventure where teamwork is the only way to escape.
-          Discover the power of collaboration in this unique island trading
-          game.
-        </p>
-        <a href="#play" class="cta-button">Play Now</a>
-      </div>
-    </section>
-
-    <!-- ========================================
-       ABOUT SECTION
-       ======================================== -->
-    <section id="about">
-      <div class="container">
-        <h2>About the Game</h2>
-        <p>
-          Welcome to <strong>Island Escape</strong>, a groundbreaking
-          cooperative game that proves the strength of unity and collaboration!
-        </p>
-
-        <div class="highlight">
-          <h3>🌍 The Setting</h3>
-          <p>
-            Three mysterious islands hold stranded players seeking escape. You
-            and your fellow survivors possess unique tools and abilities, but no
-            one can escape alone. Success requires strategy, communication, and
-            most importantly—cooperation.
-          </p>
-        </div>
-
-        <h3>The Challenge</h3>
-        <p>Your journey spans three interconnected islands:</p>
-        <ul>
-          <li>
-            <strong>Left Island:</strong> Home to one player and their unique
-            tools
-          </li>
-          <li>
-            <strong>Market Island:</strong> A neutral trading ground in the
-            center
-          </li>
-          <li>
-            <strong>Right Island:</strong> Where your partner awaits with
-            different resources
-          </li>
-        </ul>
-
-        <p>
-          Each player possesses specialized tools but lacks the materials needed
-          to build their escape vehicle. The only solution? Trade with the other
-          player at the Market Island to exchange resources and together
-          construct the means of escape!
-        </p>
-      </div>
-    </section>
-
-    <!-- ========================================
-       GAMEPLAY SECTION
-       ======================================== -->
-    <section id="gameplay">
-      <div class="container">
-        <h2>How to Play</h2>
-        <p>Master the art of cooperation with these core mechanics:</p>
-
-        <div class="card-grid">
-          <div class="gameplay-card">
-            <div class="icon">🛠️</div>
-            <h3>Use Your Tools</h3>
-            <p>
-              Each player has unique tools that can only gather specific
-              materials from their island. Work with what you have!
-            </p>
-          </div>
-
-          <div class="gameplay-card">
-            <div class="icon">🏪</div>
-            <h3>Trade at the Market</h3>
-            <p>
-              Meet at the central Market Island to negotiate trades. Exchange
-              your materials for what you both need to build your escape
-              vehicle.
-            </p>
-          </div>
-
-          <div class="gameplay-card">
-            <div class="icon">🚀</div>
-            <h3>Build Your Vehicle</h3>
-            <p>
-              Gather all necessary components through smart trading and
-              collaboration, then build your vehicle to escape together!
-            </p>
-          </div>
-
-          <div class="gameplay-card">
-            <div class="icon">🤝</div>
-            <h3>Communicate</h3>
-            <p>
-              Talk with your partner, plan your trades, and decide together how
-              to allocate resources for maximum efficiency.
-            </p>
-          </div>
-
-          <div class="gameplay-card">
-            <div class="icon">⚖️</div>
-            <h3>Fair Exchange</h3>
-            <p>
-              Negotiate trades carefully. Both players need materials from both
-              sides—mutual benefit is key to success!
-            </p>
-          </div>
-
-          <div class="gameplay-card">
-            <div class="icon">🎯</div>
-            <h3>Achieve Victory</h3>
-            <p>
-              When both players have all necessary components, build your
-              vehicles and escape the islands together!
-            </p>
+    <div class="site-shell">
+      <nav class="topbar">
+        <div class="container">
+          <a class="brand" href="#top">Alien Assembly Line</a>
+          <div class="nav-links">
+            <a href="#overview">Overview</a>
+            <a href="#world">World</a>
+            <a href="#recipes">Recipes</a>
+            <a href="#play">Play</a>
           </div>
         </div>
-      </div>
-    </section>
+      </nav>
 
-    <!-- ========================================
-       FEATURES SECTION
-       ======================================== -->
-    <section id="features">
-      <div class="container">
-        <h2>Why You'll Love It</h2>
-
-        <div class="card-grid">
-          <div class="card">
-            <h3>🤝 Genuine Cooperation</h3>
-            <p>
-              This isn't competition—it's collaboration. You and your partner
-              must work together, communicate, and make collective decisions.
-              Success requires true teamwork.
+      <header class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">2D Co-op / Time Management / Resource Gathering</p>
+            <h1>Build under pressure across three floating islands.</h1>
+            <p class="hero-text">
+              Two specialized aliens, one relentless blueprint ticker, and one
+              Omni-Crafter standing between chaos and a perfect star rating.
             </p>
+            <div class="sprite-showcase" aria-label="Playable aliens">
+              <figure class="sprite-card sprite-card-blue">
+                <img
+                  src="assets/sprites/blue-alien-pickaxe.gif"
+                  alt="Blue alien with pickaxe"
+                />
+                <figcaption>Blue miner</figcaption>
+              </figure>
+              <figure class="sprite-card sprite-card-red">
+                <img
+                  src="assets/sprites/red-alien-axe.gif"
+                  alt="Red alien with axe"
+                />
+                <figcaption>Red builder</figcaption>
+              </figure>
+            </div>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#play">Launch Mission</a>
+              <a class="button button-secondary" href="#recipes"
+                >See Crafting Recipes</a
+              >
+            </div>
+            <div class="stats">
+              <div class="stat">
+                <span class="stat-value">2</span>
+                <span class="stat-label">Players</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">3</span>
+                <span class="stat-label">Islands</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">6</span>
+                <span class="stat-label">Craftables</span>
+              </div>
+            </div>
           </div>
 
-          <div class="card">
-            <h3>🧩 Strategic Trading</h3>
-            <p>
-              Navigate complex trade negotiations. What's fair? What's balanced?
-              Will both players benefit? Strategic thinking and negotiation
-              skills are crucial.
-            </p>
-          </div>
+          <div class="hero-visual" aria-label="Isometric map preview">
+            <div class="ticker">
+              <span class="ticker-label">Current Blueprint</span>
+              <div class="ticker-row">
+                <span>Roof x2</span>
+                <span>00:38</span>
+              </div>
+            </div>
 
-          <div class="card">
-            <h3>🎭 Role Asymmetry</h3>
-            <p>
-              Each player has different tools and access to different materials.
-              This asymmetry forces you to think differently and rely on your
-              partner.
-            </p>
-          </div>
+            <div class="island-stage">
+              <article class="iso-card blue-zone">
+                <span class="zone-tag">Blue Island</span>
+                <img
+                  class="card-sprite"
+                  src="assets/sprites/blue-alien.gif"
+                  alt="Blue alien sprite"
+                />
+                <h2>Stone Route</h2>
+                <p>Blue-only terrain.</p>
+              </article>
 
-          <div class="card">
-            <h3>📖 Engaging Story</h3>
-            <p>
-              Uncover the mystery of how you all arrived on these islands and
-              what connects your fates. Your cooperation is the key to
-              understanding everything.
-            </p>
-          </div>
+              <article class="iso-card hub-zone">
+                <span class="zone-tag">Central Hub</span>
+                <h2>Crafter</h2>
+                <p>Both aliens craft and deliver here.</p>
+              </article>
 
-          <div class="card">
-            <h3>🎮 Intuitive Gameplay</h3>
-            <p>
-              Easy to learn, challenging to master. Simple mechanics create deep
-              strategic possibilities.
-            </p>
-          </div>
+              <article class="iso-card red-zone">
+                <span class="zone-tag">Red Island</span>
+                <img
+                  class="card-sprite"
+                  src="assets/sprites/red-alien.gif"
+                  alt="Red alien sprite"
+                />
+                <h2>Mineral Route</h2>
+                <p>Ore, coal, and stone for Red.</p>
+              </article>
 
-          <div class="card">
-            <h3>💡 Educational Value</h3>
-            <p>
-              Perfect for teams, classrooms, and groups learning the value of
-              collaboration, negotiation, and effective communication.
-            </p>
+              <div class="orb orb-blue"></div>
+              <div class="orb orb-red"></div>
+              <div class="bridge bridge-left"></div>
+              <div class="bridge bridge-right"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </header>
 
-    <!-- ========================================
-       GAME EMBED SECTION
-       ======================================== -->
-    <section id="play" class="game-section">
-      <div class="container">
-        <h2>Play Island Escape</h2>
-        <p style="text-align: center; color: #555; font-size: 1.1rem">
-          Jump into the adventure below. Remember: you can't escape alone. Find
-          a partner and work together!
-        </p>
+      <main>
+        <section class="section" id="overview">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Core Gameplay Loop</p>
+              <h2>Harvest, toss, process, craft, deliver.</h2>
+            </div>
 
-        <div class="game-embed-container">
-          <!-- TO ADD YOUR GAME:
-             Replace the entire .game-placeholder div with:
-             <iframe src="path/to/your/game.html" title="Island Escape Game"></iframe>
-        -->
-          <div class="game-placeholder">
-            <h3>🎮 Game Coming Soon</h3>
-            <p>The game will be embedded here.</p>
-            <p style="font-size: 0.9rem; color: #aaa">
-              Replace the .game-placeholder div with an iframe tag pointing to
-              your game.
-            </p>
-            <code>&lt;iframe src="your-game-path"&gt;&lt;/iframe&gt;</code>
+            <div class="feature-grid">
+              <article class="feature-card">
+                <h3>Harvesting</h3>
+                <p>
+                  Break raw nodes with axes and pickaxes to generate portable
+                  building resources.
+                </p>
+              </article>
+              <article class="feature-card">
+                <h3>Logistics</h3>
+                <p>
+                  Move materials between isolated islands fast enough to keep the
+                  assembly line fed.
+                </p>
+              </article>
+              <article class="feature-card">
+                <h3>Processing</h3>
+                <p>
+                  Convert basics into sticks and pebbles before sending finished
+                  ingredients to the Omni-Crafter.
+                </p>
+              </article>
+              <article class="feature-card">
+                <h3>Order Fulfillment</h3>
+                <p>
+                  Read the top-screen ticker, build the exact blueprint, and beat
+                  the draining timer for a higher score.
+                </p>
+              </article>
+            </div>
           </div>
+        </section>
+
+        <section class="section section-alt" id="world">
+          <div class="container split-layout">
+            <div>
+              <div class="section-heading left">
+                <p class="eyebrow">Tri-Island System</p>
+                <h2>Each island creates dependence by design.</h2>
+              </div>
+              <p class="section-copy">
+                Alien Assembly Line is built around separation. The void between
+                islands forces players to specialize, communicate, and keep
+                materials moving without wasting seconds.
+              </p>
+            </div>
+
+            <div class="zone-list">
+              <article class="zone-panel">
+                <h3>Blue Island</h3>
+                <p>
+                  Dedicated to stone materials and terrain only the Blue Alien can
+                  traverse.
+                </p>
+              </article>
+              <article class="zone-panel">
+                <h3>Red Island</h3>
+                <p>
+                  Holds mineral routes for stone, ore, and coal, accessible only
+                  to the Red Alien.
+                </p>
+              </article>
+              <article class="zone-panel">
+                <h3>Central Hub</h3>
+                <p>
+                  Shared crafting ground containing the Omni-Crafter, delivery
+                  zone, and the order screen.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="mechanics">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Mechanics & Controls</p>
+              <h2>Simple actions, tight coordination.</h2>
+            </div>
+
+            <div class="mechanics-table">
+              <div class="table-row table-head">
+                <span>Action</span>
+                <span>Description</span>
+              </div>
+              <div class="table-row">
+                <span>Harvesting</span>
+                <span>Use tools to break nodes into transportable units.</span>
+              </div>
+              <div class="table-row">
+                <span>Logistics</span>
+                <span>Throw and route ingredients between islands under time pressure.</span>
+              </div>
+              <div class="table-row">
+                <span>Processing</span>
+                <span>Turn wood into sticks and stone into pebbles before final assembly.</span>
+              </div>
+              <div class="table-row">
+                <span>Order Fulfillment</span>
+                <span>Match the blueprint exactly before the timer expires.</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-alt" id="recipes">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Crafting Board</p>
+              <h2>Six recipes drive the entire shift.</h2>
+            </div>
+
+            <div class="recipe-grid">
+              <article class="recipe-card">
+                <h3>Fences</h3>
+                <p>3 sticks + 3 pebbles</p>
+              </article>
+              <article class="recipe-card">
+                <h3>Support Beams</h3>
+                <p>3 wood + 1 stone</p>
+              </article>
+              <article class="recipe-card">
+                <h3>Wall</h3>
+                <p>4 wood + 2 pebbles</p>
+              </article>
+              <article class="recipe-card">
+                <h3>Foundation</h3>
+                <p>4 stone + 2 sticks</p>
+              </article>
+              <article class="recipe-card">
+                <h3>Roof</h3>
+                <p>2 wood + 2 stone</p>
+              </article>
+              <article class="recipe-card">
+                <h3>Stairs</h3>
+                <p>3 stone + 3 sticks</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="goals">
+          <div class="container goals-grid">
+            <article class="goal-card">
+              <p class="eyebrow">Technical Goals</p>
+              <h2>Readable, fast, and built for co-op clarity.</h2>
+              <ul class="goal-list">
+                <li>2D presentation with a top-down isometric perspective.</li>
+                <li>UI ticker that surfaces blueprint, quantity, and countdown.</li>
+                <li>Star rating win condition based on speed and accuracy.</li>
+              </ul>
+            </article>
+            <article class="goal-card accent">
+              <p class="eyebrow">Why It Works</p>
+              <h2>Specialization turns every second into a team decision.</h2>
+              <p>
+                No player can finish orders alone. The map layout, recipe
+                dependency, and shared crafter create constant coordination
+                pressure in both local and online co-op.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section-alt" id="play">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Playable Embed</p>
+              <h2>Drop the build into mission control.</h2>
+            </div>
+            <div class="embed-shell">
+              <div class="embed-header">
+                <span>Omni-Crafter Feed</span>
+                <span>Status: Awaiting build</span>
+              </div>
+              <div class="game-placeholder">
+                <h3>Embed your game here</h3>
+                <p>
+                  Replace this placeholder with an `iframe` pointing at the
+                  actual playable build when it is ready.
+                </p>
+                <code>&lt;iframe src="your-game-path" title="Alien Assembly Line"&gt;&lt;/iframe&gt;</code>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-row">
+          <p>Alien Assembly Line</p>
+          <p>Co-op fabrication across the void.</p>
         </div>
-      </div>
-    </section>
+      </footer>
+    </div>
   </body>
 </html>
